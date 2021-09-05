@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <title>iTutorials</title>
+  <style>
+    d-block w-100 {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">iTutorials</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Web Dev Course</a></li>
+              <li><a class="dropdown-item" href="#">C++ Course</a></li>
+              <li><a class="dropdown-item" href="#">Java Tutorials</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/fee.html">Fee Structure</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger text-light" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger "data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger "data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to iTutorials</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign up for iTutorials</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to iTutorials</h2>
+          <p>All the solutions in one place.</p>
+          <button class="btn btn-danger">Web Developement</button>
+          <button class="btn btn-primary">C++</button>
+          <button class="btn btn-success">Java Tutorials</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="2.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to iTutorials</h2>
+          <p>All the solutions in one place.</p>
+          <button class="btn btn-danger">Web Developement</button>
+          <button class="btn btn-primary">C++</button>
+          <button class="btn btn-success">Java Tutorials</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to iTutorials</h2>
+          <p>All the solutions in one place.</p>
+          <button class="btn btn-danger">Web Developement</button>
+          <button class="btn btn-primary">C++</button>
+          <button class="btn btn-success">Java Tutorials</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col my-3">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 text-white bg-danger">
+          <h4 class="my-0 fw-normal text-white">Web Dev Course</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Rs 1000<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>4 hours per week</li>
+            <li>All latest topics covered</li>
+            <li>Recorded Lectures</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-danger text-light">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div class="col my-3">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 text-white bg-primary">
+          <h4 class="my-0 fw-normal text-white">C++ Course</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Rs 2000<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>8 hours per week</li>
+            <li>Full course will be taught</li>
+            <li>Live lectures with a batch of 20 students</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary text-light">Get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="col my-3">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 text-white bg-success">
+          <h4 class="my-0 fw-normal text-white">Java Tutorials</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Rs 4000<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>12 hours per week</li>
+            <li>Full course will be taught</li>
+            <li>Live lectures with a batch of 10 students only!</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-success text-light">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="/fee.html" class="nav-link px-2 text-muted">Fees</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 iTutorials, Inc</p>
+  </footer>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

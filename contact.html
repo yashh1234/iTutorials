@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">iTutorials</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Web Dev Course</a></li>
+              <li><a class="dropdown-item" href="#">C++ Course</a></li>
+              <li><a class="dropdown-item" href="#">Java Tutorials</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/fee.html">Fee Structure</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger text-light" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to iTutorials</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign up for iTutorials</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container my-4">
+    <section class="mb-4">
+
+      <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+      <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
+        directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+        <div class="container">
+      <div class="row">
+        <div class="col-md-7 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="name" class="form-control">
+                  <label for="name" class="">Your name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="email" class="form-control">
+                  <label for="email" class="">Your email</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="subject" name="subject" class="form-control">
+                  <label for="subject" class="">Subject</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea type="text" id="message" name="message" rows="7"
+                    class="form-control md-textarea"></textarea>
+                  <label for="message">Your message</label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="text-center text-md-left">
+            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+        </div>
+        <div class="col-md-5 text-center">
+          <ul class="list-unstyled mb-0">
+            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+              <p>Mumbai, 401305, India</p>
+            </li>
+
+            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+              <p>+91 8668978960</p>
+            </li>
+
+            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+              <p>yashkumar.gupta@slrtce.in</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </section>
+  </div>
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="/fee.html" class="nav-link px-2 text-muted">Fees</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 iTutorials, Inc</p>
+  </footer>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
